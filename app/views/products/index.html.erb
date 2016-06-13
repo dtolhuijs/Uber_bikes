@@ -1,7 +1,7 @@
 <h1>Products</h1>
 
 <% @products.each do |product| %>
-    <p><%= product.type %></p>
-    <p><%= link_to product.type, product_path( product.id ) %></p>
+    <p><%= product.title %></p>
+    <p><%= link_to product.title, product_path( product.id ) %></p>
 
 <% end %>
