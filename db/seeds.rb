@@ -12,9 +12,9 @@ User.create( {name: "Jorge Oosthoek",   location:"Arnhem",     email:"J@yahoo.co
 User.create( {name: "Vincent Brinkman", location:"Amsterdam",  email:"VincentBrinkman@yahoo.com",  phone:"+06098990" } )
 
 #PRODUCTS
-Product.create( {type:"Electric female bicycle", description:"While the batery is full you can cycle for 15 km, then you need to recharge" } )
-Product.create( {type:"Tandem bike",             description:"Cycle with your love one or just an imaginary friend" } )
-Product.create( {type:"Bakfiets" ,               description:"Carry your children or pets or love one, imaginary people whatever you want, this is the bicycle for you!" } )
+Product.create( {title:"Electric female bicycle", description:"While the batery is full you can cycle for 15 km, then you need to recharge" } )
+Product.create( {title:"Tandem bike",             description:"Cycle with your love one or just an imaginary friend" } )
+Product.create( {title:"Bakfiets" ,               description:"Carry your children or pets or love one, imaginary people whatever you want, this is the bicycle for you!" } )
 
 #LISTINGS
 Booking.create( {start_date:"May 10",   end_date:"May 15" } )
