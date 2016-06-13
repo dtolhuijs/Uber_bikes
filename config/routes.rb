@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+get 'products' => 'products#index'
+get 'products/:id' => 'product#show'
+
+
   root 'products#index'
 
   resources :users
