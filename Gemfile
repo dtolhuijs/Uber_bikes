@@ -29,8 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use Unicorn as the app server
 # gem 'unicorn'
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
