@@ -1,0 +1,15 @@
+<%= form_for @product do |f| %>
+
+    <div class="form-group">
+       <%= f.label :title %>
+       <%= f.text_field :title, placeholder: ". . ." %>
+    </div>
+
+    <div class="form-group">
+       <%= f.label :description %>
+       <%= f.text_field :description, placeholder: ". . ."   %>
+    </div>
+
+    <%= f.submit (@product.new_record? ? "Create" : "Update") %>
+
+<% end %>
