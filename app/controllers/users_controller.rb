@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def update
              @user = User.find( params[:id] )
 
-             if @user.update_attributes( author_params )
+             if @user.update_attributes( user_params )
                 redirect_to @user
              else
                 render 'edit'
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
           end
 
   def create
-          user = User.new( author_params )
+          user = User.new( user_params )
 
            if user.save
               redirect_to users_path
@@ -39,8 +39,8 @@ class UsersController < ApplicationController
              redirect_to users_path
           end
 
-  def author_params
-                params.require( :user ).permit( :name, :country, :bio )
+  def user_params
+                params.require( :user ).permit( :name, :location, :email, :phone )
              end
 
           end

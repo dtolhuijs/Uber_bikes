@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
           product = Product.new( product_params )
 
           if product.save
-             redirect_to author_path( product.author_id )
+             redirect_to product_path( product.product_id )
           else
              render new_product_path
           end
@@ -40,7 +40,7 @@ class ProductsController < ApplicationController
        def destroy
          @product = Product.find( params[:id] )
 
-         author_id = @product.author_id
+         product_id = @product.product_id
 
          @product.destroy
 
@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
     private
 
        def product_params
-         params.require( :product ).permit( :users, :name, :location, :email, :phone, product_ids: [] )
+         params.require( :product ).permit( :users, :title, :description, :location, product_ids: [] )
        end
 
     end
