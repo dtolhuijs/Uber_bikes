@@ -38,11 +38,13 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.find( params[:find])
+    @product = Product.find( params[:id])
+
+    user_id = @product.user_id
 
     @product.destroy
 
-    redirect_to products_path
+    redirect_to users_path( user_id )
   end
 
     private
