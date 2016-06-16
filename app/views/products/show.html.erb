@@ -2,3 +2,7 @@
 
 <p>title: <%= @product.title %></p>
 <p>description: <%= @product.description %></p>
+
+   <%= link_to "Delete", product_path( @product ), method: :delete, data: { confirm: "Are you sure?" } %>
+   <%= link_to "Edit", edit_product_path( @product) %>
+   <%= link_to "Back", root_path %>
