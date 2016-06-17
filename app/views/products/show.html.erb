@@ -1,10 +1,16 @@
-<h1><%= @product.title %></h1>
+<div class="row">
+  <div class="col-md-6">
+    <%= image_tag @product.image_url.to_s, class: 'bg' %>
+  </div>
 
-<p>title: <%= @product.title %></p>
-<p>description: <%= @product.description %></p>
-<%= image_tag @product.image_url.to_s, class: 'bg' %>
+  <div class="col-md-6 info_section">
+    <h1><%= @product.title %></h1>
+    <p>title: <%= @product.title %></p>
+    <p>description: <%= @product.description %></p>
+    <button type="button" class="btn btn-info"><%= link_to "Edit", edit_product_path( @product) %></button>
+    <button type="button" class="btn btn-info"><%= link_to "Back", root_path %></button>
+    <button type="button" class="btn btn-info"><%= link_to "User", user_path( @product) %></button>
+    <button type="button" class="btn btn-danger"><%= link_to "Delete", product_path( @product ), method: :delete, data: { confirm: "Are you sure?" }%> </button>
+  </div>
 
-   <%= link_to "Delete", product_path( @product ), method: :delete, data: { confirm: "Are you sure?" } %>
-   <%= link_to "Edit", edit_product_path( @product) %>
-   <%= link_to "Back", root_path %>
-   <%= link_to "User", user_path( @product) %>
+</div>

@@ -39,11 +39,8 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.3.6.2)
       execjs
-<<<<<<< HEAD
     aws_cf_signer (0.1.3)
-=======
     bcrypt (3.1.11)
->>>>>>> c0bd1687532f7decbb4a20a9d88e552088dc43e6
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.6)
@@ -141,13 +138,10 @@ GEM
     rake (11.2.2)
     rdoc (4.2.2)
       json (~> 1.4)
-<<<<<<< HEAD
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-=======
     responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
->>>>>>> c0bd1687532f7decbb4a20a9d88e552088dc43e6
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
