@@ -11,16 +11,17 @@
 # t.string   "location"
 # t.string   "email"
 # t.string   "phone"
+User.delete_all
 
 users = [
 
-["Deisi Bonilla", "Den Helder", "deisi@yahoo.com", "+06458324"],
-["Jorge Oosthoek", "Arnhem", "J@yahoo.com", "+07458902"],
-["Vincent Brinkman", "Amsterdam", "VincentBrinkman@yahoo.com", "+06098990"]
+["Deisi Bonilla", "Den Helder", "deisi@yahoo.com", "+06458324", "123"],
+["Jorge Oosthoek", "Arnhem", "J@yahoo.com", "+07458902", "123"],
+["Vincent Brinkman", "Amsterdam", "VincentBrinkman@yahoo.com", "+06098990", "123"]
 ]
 
-users.each do | name, location, email, phone |
-   User.create( name: name, location: location, email: email, phone:phone )
+users.each do | name, location, email, phone, password |
+   User.create( name: name, location: location, email: email, phone:phone, password:password )
 end
 #
 # #PRODUCTS
