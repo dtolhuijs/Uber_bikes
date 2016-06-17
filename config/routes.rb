@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'site/home'
+
   get 'pricelist' => 'pricelist#index'
   devise_for :users
-  root 'products#index'
+  root 'site#home'
 
   resources :pricelist
   resources :users

@@ -22,10 +22,16 @@ main {
 .nav navbar-nav {
   margin-left: 200px;
 }
-body {
-
-
-  background-image: url("http://dribbble.s3.amazonaws.com/users/41828/screenshots/630571/bikepattern.jpg");
-
-
+.background-color {
+  background-size: auto;
+  background-image: url("http://www.fietsenmaes.be/upload/editor/images/ebikekalkhoff1.jpg");
+  background-repeat: no-repeat;
+  height: 600px;
+  width: auto;
+  margin-left: 61px;
+  margin-bottom: 100px;
+}
+.container {
+  background-color: white;
+  background-size: cover;
 }
