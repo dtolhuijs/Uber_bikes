@@ -15,6 +15,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+#carrierwave uploads files and photos to the server
+gem 'carrierwave'
+#stores images and helps deploy to heroku
+gem 'cloudinary'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

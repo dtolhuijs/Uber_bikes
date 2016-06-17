@@ -2,6 +2,7 @@
 
 <p>title: <%= @product.title %></p>
 <p>description: <%= @product.description %></p>
+<%= image_tag @product.image_url.to_s, class: 'bg' %>
 
    <%= link_to "Delete", product_path( @product ), method: :delete, data: { confirm: "Are you sure?" } %>
    <%= link_to "Edit", edit_product_path( @product) %>

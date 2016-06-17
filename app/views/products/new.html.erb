@@ -1,17 +1,30 @@
 <h1>New Product</h1>
 
 <%= form_for @product do |f| %>
+<%= image_tag @product.image_url.to_s, class: 'bg' %>
 
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+<div class="content">
+  <h1><%= @product.title %></h1>
+  <p>
+    <%= @product.description %>
+  </p>
 
-    <%= f.label :description %>
-    <%= f.text_field :description, size: 100 %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
 
-    <%= f.submit "Create" %>
+  <%= f.label :description %>
+  <%= f.text_field :description, size: 100 %>
+
+  <p>
+  <%= f.label :image %><br>
+  <%= f.file_field :image %>
+  </p>
+  <%= f.submit "Create" %>
+
+  <div>
+  <%= link_to "Back", root_path %>
+  </div>
+
+</div>
 
 <% end %>
-
-<div>
-<%= link_to "Back", root_path %>
-</div>
