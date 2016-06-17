@@ -22,6 +22,7 @@ main {
 .nav navbar-nav {
   margin-left: 200px;
 }
+<<<<<<< HEAD
 .background-color {
   background-size: auto;
   background-image: url("http://www.fietsenmaes.be/upload/editor/images/ebikekalkhoff1.jpg");
@@ -30,6 +31,16 @@ main {
   width: auto;
   margin-left: 61px;
   margin-bottom: 100px;
+=======
+ .backgroundcolor {
+  background-size: auto;
+  background-image: url("http://www.fietsenmaes.be/upload/editor/images/ebikekalkhoff1.jpg");
+  background-repeat: no-repeat;
+  // opacity:0,2;
+  height: 600px;
+  weight: 80px;
+  margin-left: 61px;
+>>>>>>> c3c981caaf94ae22a22fdb9cbd6f0ccbedc3ce8b
 }
 .container {
   background-color: white;
