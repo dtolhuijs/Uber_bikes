@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 #carrierwave uploads files and photos to the server
 gem 'carrierwave'
+#stores images and helps deploy to heroku
+gem 'cloudinary'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
