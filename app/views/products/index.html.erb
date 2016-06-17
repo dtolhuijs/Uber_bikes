@@ -1,20 +1,34 @@
 <h1>Products</h1>
+<div class="row">
+    <div class="col-md-3">
+      <br><br>
+      <hr>
+        <button type="button" class="btn btn-default btn-lg"><h4><%= link_to "Add new product", new_product_path %></h4></button>
+    </div>
 
-<% @products.each do |product| %>
-    <p><%= link_to product.title, product_path( product.id ) %></p>
-    <a href="<%= product_path product%>" class="summary">
-     <%= image_tag(product.image.thumbnail.url, :class => "thumbnail inline") %>
-     <h2><%= product.title %></h2>
-     <h3><%= product.description %></h3>
-   </a>
+    <div class="col-md-3">
+      <br><br>
+      <hr>
+        <button type="button" class="btn btn-default btn-lg"><h4><%= link_to "Make a Booking", new_booking_path %></h4></button>
+    </div>
 
-<% end %>
+    <div class="col-md-3">
+      <br><br>
+      <hr>
+        <button type="button" class="btn btn-default btn-lg"><h4><%= link_to "See Bookings", bookings_path %></h4></button>
+    </div>
+</div>
 
-<br><br>
-<hr>
+<div class="row">
+    <div class="col-md-12">
+      <br><br>
+      <hr>
+      <% @products.each do |product| %>
+          <a href="<%= product_path product%>" class="summary">
+           <%= image_tag(product.image.thumbnail.url, :class => "thumbnail inline") %>
+           <h2><%= product.title %></h2>
+           <h3><%= product.description %></h3>
+         </a>
 
-<h4><%= link_to "Add new product", new_product_path %></h4>
-
-<h4><%= link_to "Make a Booking", new_booking_path %></h4>
-
-<h4><%= link_to "See Bookings", bookings_path %></h4>
+      <% end %>
+    </div>
