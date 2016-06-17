@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+main {
+   padding-top: 160px;
+}
+.nav navbar-nav {
+  margin-left: 200px;
+}
+body {
+
+
+  background-image: url("http://dribbble.s3.amazonaws.com/users/41828/screenshots/630571/bikepattern.jpg");
+
+
+}

@@ -20,7 +20,6 @@ class ProductsController < ApplicationController
 
    def new
      @product = Product.new
-     @novel.product_id = params[:product_id]
   end
 
    def show
@@ -31,31 +30,22 @@ class ProductsController < ApplicationController
     product = Product.new( product_params)
 
     if product.save
+
       redirect_to products_path
     else
       render 'new'
     end
   end
 
-      def create
-          product = Product.new( product_params )
+  def destroy
+    @product = Product.find( params[:id])
 
-          if product.save
-             redirect_to product_path( product.product_id )
-          else
-             render new_product_path
-          end
-       end
+    user_id = @product.user_id
 
-       def destroy
-         @product = Product.find( params[:id] )
+    @product.destroy
 
-         product_id = @product.product_id
-
-         @product.destroy
-
-         redirect_to product_path( product_id )
-       end
+    redirect_to users_path( user_id )
+  end
 
     private
 

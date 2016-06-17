@@ -39,6 +39,8 @@ products.each do | title, description |
    Product.create( title: title, description: description )
 end
 
+products = {}
+
 # #Bookings
 # t.datetime "start_date"
 # t.datetime "end_date"

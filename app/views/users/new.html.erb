@@ -1,0 +1,20 @@
+<h1>New User</h1>
+
+<%= form_for @user do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :location %>
+    <%= f.text_field :location%>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :phone %>
+    <%= f.text_field :phone%>
+
+    <%= f.submit "Create" %>
+
+
+<% end %>
