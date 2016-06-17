@@ -15,15 +15,15 @@ User.delete_all
 
 users = [
 
-["Deisi Bonilla", "Den Helder", "deisi@yahoo.com", "+06458324", "123"],
-["Jorge Oosthoek", "Arnhem", "J@yahoo.com", "+07458902", "123"],
-["Vincent Brinkman", "Amsterdam", "VincentBrinkman@yahoo.com", "+06098990", "123"]
+["Deisi Bonilla", "Den Helder", "deisi@yahoo.com", "+06458324", "aaaaaaaa"],
+["Jorge Oosthoek", "Arnhem", "J@yahoo.com", "+07458902", "12345678"],
+["Vincent Brinkman", "Amsterdam", "VincentBrinkman@yahoo.com", "+06098990", "12345678"]
 ]
 
 users.each do | name, location, email, phone, password |
    User.create( name: name, location: location, email: email, phone:phone, password:password )
 end
-#
+
 # #PRODUCTS
 # # t.string   "title"
 # # t.text     "description"
