@@ -1,0 +1,2 @@
+module PricelistHelper
+end

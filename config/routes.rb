@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'pricelist' => 'pricelist#index'
   devise_for :users
   root 'products#index'
 
-
+  resources :pricelist
   resources :users
   resources :products
   resources :bookings
