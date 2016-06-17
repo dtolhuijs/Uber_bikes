@@ -9,7 +9,7 @@
     <p>description: <%= @product.description %></p>
     <button type="button" class="btn btn-info"><%= link_to "Edit", edit_product_path( @product) %></button>
     <button type="button" class="btn btn-info"><%= link_to "Back", root_path %></button>
-    <button type="button" class="btn btn-info"><%= link_to "User", user_path( @product) %></button>
+    <button type="button" class="btn btn-info"><%= link_to "Book Bicycle", new_booking_path %></button>
     <button type="button" class="btn btn-danger"><%= link_to "Delete", product_path( @product ), method: :delete, data: { confirm: "Are you sure?" }%> </button>
   </div>
 
